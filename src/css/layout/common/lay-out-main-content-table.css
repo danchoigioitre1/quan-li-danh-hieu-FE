@@ -1,0 +1,11 @@
+.main-content-table {
+  background-color: white;
+  height: calc(100vh - 185px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 0 11px rgba(0, 0, 0, 0.08);
+}
+.main__container {
+  padding-right: 10px;
+}

@@ -1,0 +1,38 @@
+/*emulation components */
+@import url("./emulation/filter.css");
+@import url("./emulation//table.css");
+@import url("./emulation/modal.css");
+@import url("./emulation/footer.css");
+@import url("./emulation/importModal.css");
+/* lay out */
+@import url("./layout/common/lay-out-main-content-table.css");
+@import url("./layout/common/header.css");
+@import url("./layout/common/sidebar.css");
+
+/*components*/
+@import url("./layout/components/combo-box.css");
+/* @import url("../assets/font/fontawesome-5.15.1/css/all.min.css");
+@import url("../assets/font/fontawesome-5.15.1/js/all.min.js"); */
+/*global style*/
+@font-face {
+  font-family: MyFont;
+  src: url("../assets/font/GoogleSans-Light.otf");
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  background-color: var(--background-color);
+  font-family: MyFont;
+}
+
+h1 {
+  font-weight: 700;
+}
+:root {
+  --background-color: #f4f5f8;
+  --border-radius: 3px;
+  --border-color: rgb(193, 193, 193);
+  --button-height: 36px;
+  --modal-filter-width: 360px;
+}

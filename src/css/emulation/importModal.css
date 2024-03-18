@@ -1,0 +1,317 @@
+.importModalContainer {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.174);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.import-modal--content {
+  width: 650px;
+  background-color: white;
+  border-radius: 5px;
+  padding: 15px 20px;
+  box-sizing: border-box;
+}
+.import-modal--header {
+  display: flex;
+  justify-content: space-between;
+}
+.import-modal--header button {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+}
+.import-modal--header button:hover {
+  background-color: gray;
+}
+.icon-container {
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: black;
+}
+.first_process,
+.second_process {
+  display: flex;
+  align-items: center;
+  column-gap: 7px;
+}
+.first_process span,
+.second_process span {
+  font-weight: bold;
+  font-size: 14px;
+}
+.process--line {
+  width: 200px;
+  height: 0px;
+  border-top: 2px dashed black;
+}
+.import-modal--process {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+  margin-top: 25px;
+}
+.import-modal--file {
+  width: 97%;
+  border: 1px solid rgba(0, 0, 0, 0.259);
+  border-radius: 4px;
+  height: 350px;
+  margin: auto;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+.bxs-file-import {
+  font-size: 100px;
+  color: rgba(0, 0, 255, 0.779);
+}
+
+.solid-line {
+  width: 106%;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.221);
+  transform: translateX(-18px);
+}
+
+.import-modal_div--button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+.download-button {
+  height: 36px;
+  border: 1px solid rgb(0, 0, 255);
+  color: rgb(0, 0, 255);
+  padding: 1px 50px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.download-button:hover,
+.button:hover {
+  opacity: 0.6;
+}
+.button {
+  height: 36px;
+  box-sizing: border-box;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.cancel-button {
+  border: 1px solid grey;
+}
+.continue-button {
+  background-color: rgba(17, 17, 190, 0.89) !important;
+  color: white;
+}
+.button-import--div {
+  display: flex;
+  column-gap: 8px;
+}
+.import--input {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.selected-file {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.259);
+  border-radius: 4px 4px 0 0;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+}
+.selected-file .bx-file-blank {
+  transform: scale(1.1);
+  opacity: 0.6;
+}
+.support--text {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.icon-contain {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: rgba(0, 128, 0, 0.788);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon-contain i {
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  transform: translateX(-0.5px);
+}
+.valid--div {
+  display: flex;
+  align-items: center;
+  column-gap: 7px;
+  margin-right: 15px;
+}
+.valid--div .bx-x {
+  transform: translateY(0.5px);
+}
+.change-file_button span {
+  color: rgba(0, 0, 255, 0.788);
+  font-weight: bold;
+}
+.import-modal--file span {
+  font-size: 14px;
+}
+.import-file--name {
+  width: 200px;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+  margin-left: 5px;
+  margin-right: 15px;
+}
+.import-file--size {
+  margin-right: 15px;
+}
+
+.div--sheet-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sheet-header {
+  height: 36px;
+  border: 1px solid gray;
+  width: 100%;
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding-left: 15px;
+}
+.sheet--name-list {
+  height: 36px;
+  width: 100%;
+  border: 1px solid gray;
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding-left: 15px;
+}
+.sheet {
+  display: flex;
+  flex-direction: column;
+  width: 49.5%;
+  row-gap: 5px;
+  margin-bottom: 8px;
+}
+.sheet span {
+  color: red;
+}
+
+.div--show-valid-data {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.div--data {
+  width: 31%;
+  border: 1px solid black;
+  height: 130px;
+  border-radius: 4px;
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.number-data {
+  font-size: 50px;
+  font-weight: bold;
+}
+.title--div {
+  width: 100%;
+  height: 35px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title--div span {
+  color: white;
+  font-weight: bold;
+}
+.valid-data {
+  border-color: rgba(0, 0, 255, 0.888);
+}
+.valid-data .title--div {
+  background-color: rgba(0, 0, 255, 0.888);
+}
+.valid-data .number-data {
+  color: rgba(0, 0, 255, 0.888);
+}
+
+.invalid-data {
+  border-color: red;
+}
+.invalid-data .title--div {
+  background-color: red;
+}
+.invalid-data .number-data {
+  color: red;
+}
+
+.button--import-valid-data,
+.button--error-data {
+  border: none;
+  color: blue;
+  font-size: 14px;
+}
+.div--import-valid-data {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 4px;
+  padding: 7px;
+}
+.import-text,
+.error-text {
+  font-size: 15px;
+}
+.button--import-valid-data:hover,
+.button--error-data:hover {
+  text-decoration: underline;
+  opacity: 0.7;
+}
